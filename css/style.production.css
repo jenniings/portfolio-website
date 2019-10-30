@@ -17,18 +17,16 @@ Good Font Pairs: https://fontpair.co/
 
 /* targets all elements within an <html> tag */
 :root {
-  /* --color: #489c79; */
-  /* --grid-template-column: 1fr 1fr 1fr; */
-  /* --secondary-bg-color: #e0b354;
-  --button-text-secondary: #2b2b2b; */
-
-/*
+  --color: #489c79;
+  --grid-template-column: 1fr 1fr 1fr;
+  --secondary-bg-color: #e0b354;
+  --button-text-secondary: #2b2b2b;
   --h1-font-size: 30px;
   --h1-font-weight: 700;
   --h2-font-size: 24px;
   --h2-font-weight: 700;
   --h3-font-size: 18px;
-  --h3-font-weight: 700; */
+  --h3-font-weight: 700;
 }
 
 /* Make a grid container */
@@ -53,18 +51,18 @@ Good Font Pairs: https://fontpair.co/
 } */
 
 body {
-    font-family: 'Raleway', sans-sans-serif;
-    font-weight: 400;
-    font-size: var(-primary-font-size);
-    /* Sets the font size to 16 px */
-    line-height: 1.6;
-    /* Sets the line height to 1.6 */
+  font-family: 'Raleway', sans-sans-serif;
+  font-weight: 400;
+  font-size: var(-primary-font-size);
+  /* Sets the font size to 16 px */
+  line-height: 1.6;
+  /* Sets the line height to 1.6 */
 }
 
 /* Sets the default width of an element to include the padding and the border via the box-sizing property and border-box value */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Profile box now centered on the page thanks to margin: 0 auto;*/
@@ -94,16 +92,16 @@ the page with 20 px on all sides */
 for the navigation. Same shrink ratio, base width, but won't be able to grow */
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 /* Navigation should be able to take up the rest of the space as well as be right-
 aligned */
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -131,8 +129,8 @@ aligned */
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 /* Media query for displays smaller than 500px */
@@ -144,22 +142,24 @@ aligned */
   }
 }
 /* Between 500 and 750 px */
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     /* 2 column grid */
     -ms-grid-columns: 1fr undefined 1fr;
     grid-template-columns: 1fr 1fr;
   }
-} 
+}
 /* Shared code */
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -182,7 +182,7 @@ aligned */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.2s opacity;
   -o-transition-duration: 0.2s opacity;
-  transition-duration:0.2s opacity;
+  transition-duration: 0.2s opacity;
   /* transition-property: opacity; */
 }
 
@@ -263,20 +263,25 @@ h3 {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
 }
+
 @keyframes color-change {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -285,63 +290,69 @@ h3 {
 /* Create a sun animation */
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 /* Get the cloud to move */
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
+
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 /* Create a cloud animation */
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 /* Get the cloud to move backwards */
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
+
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 /* Create the cloud animation (reverse) */
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /*This "a" sequence for links must be in this order */
