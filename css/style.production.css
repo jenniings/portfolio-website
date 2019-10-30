@@ -150,7 +150,7 @@ aligned */
     -ms-grid-columns: 1fr undefined 1fr;
     grid-template-columns: 1fr 1fr;
   }
-}
+} 
 /* Shared code */
 @media all and (max-width: 750px) {
   .grid {

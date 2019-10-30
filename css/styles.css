@@ -237,7 +237,7 @@ h3 {
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
-
+ 
 /* Get the cloud to move backwards */
 @keyframes cloud-move-reverse {
   from {
