@@ -38,7 +38,7 @@ Good Font Pairs: https://fontpair.co/
   display: grid;
   -ms-grid-columns: 1fr undefined 1fr undefined 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: undefined;
+  /* grid-gap: undefined; */
 }
 
 .grid__item {
@@ -181,8 +181,8 @@ aligned */
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.2s opacity;
-       -o-transition-duration: 0.2s opacity;
-          transition-duration: 0.2s opacity;
+  -o-transition-duration: 0.2s opacity;
+  transition-duration:0.2s opacity;
   /* transition-property: opacity; */
 }
 
@@ -202,8 +202,8 @@ button {
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.2s opacity;
-       -o-transition-duration: 0.2s opacity;
-          transition-duration: 0.2s opacity;
+  -o-transition-duration: 0.2s opacity;
+  transition-duration: 0.2s opacity;
   /* transition-property: opacity; */
 }
 
