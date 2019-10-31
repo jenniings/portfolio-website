@@ -51,7 +51,7 @@ Good Font Pairs: https://fontpair.co/
 } */
 
 body {
-  font-family: 'Raleway', sans-sans-serif;
+  font-family: "Raleway", sans-sans-serif;
   font-weight: 400;
   font-size: var(-primary-font-size);
   /* Sets the font size to 16 px */
@@ -66,7 +66,8 @@ body {
 }
 
 /* Profile box now centered on the page thanks to margin: 0 auto;*/
-.profile, .market {
+.profile,
+.market {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -113,12 +114,12 @@ aligned */
 .navigation-list {
   list-style-type: none;
 }
-    li {
-    display: inline-block;
-    margin-left: 15px;
-  }
-    .navigation-list__item--active {
-      text-decoration: none;
+li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.navigation-list__item--active {
+  text-decoration: none;
 }
 
 /* Moves the icons on the footer to be aligned and below the text */
@@ -219,28 +220,28 @@ button:focus,
 
 /* button {
   /* overwrites browser defaults and resets the border */
-  /* border: none;
+/* border: none;
   /* takes the font from the outer container */
-  /* font-family: inherit; */
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  /* background-color: #357b70;
+/* font-family: inherit; */
+/* styles the background color, font color, and text decoration (underline, etc.) of the button */
+/* background-color: #357b70;
   color: white;
   text-decoration: none; */
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  /* padding: 10px;
+/*adds spacing to the button (this will be discussed more in-depth later) */
+/* padding: 10px;
   border-radius: 3px; */
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  /* border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+/* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+/* border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 } */
 
 /* button:hover, button:focus { */
-  /* lets the mouse appear as a hand when hovering over the button */
-  /* cursor: pointer; */
-  /* reduces the opacity of the button to 80% */
-  /* opacity: 0.8;
+/* lets the mouse appear as a hand when hovering over the button */
+/* cursor: pointer; */
+/* reduces the opacity of the button to 80% */
+/* opacity: 0.8;
 } */
 
- /* .button__secondary {
+/* .button__secondary {
   background-color: #e0b354;
   color: #2b2b2b;
 }  */
@@ -366,7 +367,8 @@ a:visited {
   color: #05676e;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
