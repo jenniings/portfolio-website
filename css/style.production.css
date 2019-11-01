@@ -115,8 +115,11 @@ aligned */
   list-style-type: none;
 }
 li {
-  display: inline-block;
+  /* display: inline-block; */
   margin-left: 15px;
+}
+.navigation-list li {
+  display: inline-block;
 }
 .navigation-list__item--active {
   text-decoration: none;
